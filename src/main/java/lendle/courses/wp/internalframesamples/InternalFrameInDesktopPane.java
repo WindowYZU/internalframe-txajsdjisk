@@ -8,6 +8,7 @@ package lendle.courses.wp.internalframesamples;
 import java.awt.BorderLayout;
 import java.awt.Dimension;
 import java.awt.FlowLayout;
+import java.util.Locale;
 import javax.swing.JDesktopPane;
 import javax.swing.JFrame;
 import javax.swing.JInternalFrame;
@@ -33,7 +34,17 @@ public class InternalFrameInDesktopPane {
         //create a desktoppane
         //add internalFrame to it
         //make it visible
-        
+        JDesktopPane jDesktopPane=new JDesktopPane();
+        frame.setContentPane(jDesktopPane);
+        JInternalFrame jInternalFrame=new JInternalFrame();
+        frame.add(jInternalFrame);
+        jInternalFrame.setSize(300,300);
+        jInternalFrame.setVisible(true);
+        jInternalFrame.setMaximizable(true);
+        jInternalFrame.setIconifiable(true);
+        jInternalFrame.setResizable(true);
+        jInternalFrame.setClosable(true);
+        jInternalFrame.setLocation(100, 200); 
         /////////////////////////////////
         frame.setVisible(true);
     }

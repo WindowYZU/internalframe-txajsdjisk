@@ -36,7 +36,7 @@ public class LayerSample {
         //experiment with JDesktopPane.xxxLAYER
         JButton button1=new JButton("button1");
         button1.setBounds(0, 0, 100, 50);
-        desktopPane.add(button1, JDesktopPane.DRAG_LAYER);
+        desktopPane.add(button1, JDesktopPane.MODAL_LAYER);
         
         JButton button2=new JButton("button2");
         button2.setBounds(50, 0, 100, 50);
